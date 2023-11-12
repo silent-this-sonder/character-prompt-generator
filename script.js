@@ -235,7 +235,6 @@ function change_colors(colors_array) {
         i < h_colors.length;
         i++
         ) {
-            console.log(i);
             h_colors[i].style.backgroundColor = colors_array[i];
         };
 };
