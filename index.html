@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!--Provide some metadata-->
+        <meta charset="utf-8" />
+        <meta name="author" content="silent-this-sonder" />
+        <meta
+            name="description"
+            content="A simple character generator that can be used as art prompts, OC ideas, or anything involving interesting people." />
+        
+        <!--Favicon-->
+        <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+
+        <!--CSS file-->
+        <link rel="stylesheet" href="style.css" />
+
+        <!--JS script-->
+        <script src="script.js" defer></script>
+        
+        <!--Name of the site-->
+            <title>Character Generator</title>
+    </head>
+    <body>
+        <div id="title">
+            <h1>Character Prompt Generator</h1>
+            <p>Created by <a href="https://github.com/silent-this-sonder">silent-this-sonder</a></p>
+            <p>Use this to generate character concepts, art prompts, and more!</p>
+            <button onclick="change_HTML()">Generate</button>
+            <p>Photo by <a href="https://unsplash.com/@kazuend?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">kazuend</a> on <a href="https://unsplash.com/photos/calm-body-of-water-near-alp-mountains-during-nighttime-2KXEb_8G5vo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+        </div>
+        <div id="prompt">
+            <div class="promptitem">
+                <label>Colors</label>
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+            </div>
+
+            <div class="promptitem">
+                <label>Gender</label>
+                <p id="gender">?</p>
+            </div>
+
+            <div class="promptitem">
+                <label>Adjective</label>
+                <p id="adjective">?</p>
+            </div>
+
+            <div class="promptitem">
+                <label>Age</label>
+                <p id="age">?</p>
+            </div>
+
+            <div class="promptitem">
+                <label>Hair</label>
+                <p id="hair">?</p>
+            </div>
+
+            <div class="promptitem">
+                <label>Eyes</label>
+                <p id="eyes">?</p>
+            </div>
+
+            <div class="promptitem">
+                <label>Height</label>
+                <p id="height">?</p>
+            </div>
+
+            <div class="promptitem">
+                <label>Clothes</label>
+                <p id="clothes">?</p>
+            </div>
+
+            <div class="promptitem">
+                <label>Other</label>
+                <p id="bonus">?</p>
+                <p id="bonus1">?</p>
+                <p id="bonus2">?</p>
+            </div>
+        </div>
+    </body>
+</html>

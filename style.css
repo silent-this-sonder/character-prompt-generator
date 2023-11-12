@@ -1,0 +1,117 @@
+/*Google Fonts "Megrim" and "Roboto Serif"*/
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Roboto+Serif:opsz,wght@8..144,300&display=swap');
+
+body {
+    display: flex;
+    text-align: center;
+    font-family: "Megrim", "Helvetica Neue", "Helvetica", sans-serif;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+button {
+    font-family: "Megrim", "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 28px;
+    outline: 0;
+    grid-gap: 8px;
+    align-items: center;
+    background-color: #3F48CC;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-flex;
+    flex-shrink: 0;
+    gap: 8px;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all .14s ease-out;
+    white-space: nowrap;
+}
+
+button:hover {
+    box-shadow: 8px 8px 0 #000;
+    transform: translate(-8px,-8px);
+}
+
+img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 50%
+}
+
+p {
+    font-family: "Roboto Serif", "Times New Roman", "Times", serif;
+    font-size: 28;
+    margin-left: 5%;
+}
+
+div#title {
+    color: #fff;
+    margin: auto;
+    margin-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 20px;
+    width: 640px;
+    height: 960px;
+    background-image: url(images/nightsky.jpg);
+}
+
+div#title a {
+    color: #FFFF00;
+}
+
+div#prompt {
+    margin: auto;
+    width: 50%;
+    height: 50%;
+}
+
+div#prompt label {
+    font-family: "Megrim", "Helvetica Neue", "Helvetica", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    width: 25%;
+    outline: 0;
+    grid-gap: 8px;
+    align-items: center;
+    background-color: #3F48CC;
+    color: #fff;
+    border-radius: 20px;
+    display: inline-flex;
+    flex-shrink: 0;
+    gap: 8px;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all .14s ease-out;
+    white-space: nowrap;
+}
+
+div#prompt label:hover {
+    box-shadow: 8px 8px 0 #000;
+    transform: translate(-8px,-8px);
+}
+
+div.promptitem {
+    display: flex;
+    margin-bottom: 2%;
+}
+
+div.color {
+    width: 100px;
+    height: 100px;
+    margin-left: 2%;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+}
