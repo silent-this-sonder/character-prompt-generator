@@ -33,7 +33,7 @@ label, button {
     white-space: nowrap;
     grid-gap: 8px;
     align-items: center;
-    background-color: #3F48CC;
+    background-color: #545f8d;
     color: #fff;
     border-radius: 20px;
 }
