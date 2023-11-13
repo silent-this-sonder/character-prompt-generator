@@ -202,6 +202,8 @@ let h_clothes = document.getElementById("clothes");
 let h_bonus = document.getElementById("bonus");
 let h_bonus1 = document.getElementById("bonus1");
 let h_bonus2 = document.getElementById("bonus2");
+// text to be copied
+let h_copy = document.getElementById("copy");
 
 
 // create the colors array
@@ -253,4 +255,43 @@ function change_HTML() {
     h_bonus.innerHTML = randelem(bonus);
     h_bonus1.innerHTML = randelem(bonus);
     h_bonus2.innerHTML = randelem(bonus);
+
+    // write the text to be copied
+    h_copy.innerHTML = h_gen.innerHTML + ". ";
+    h_copy.innerHTML += h_adj.innerHTML + ". ";
+    h_copy.innerHTML += h_age.innerHTML + ". ";
+    h_copy.innerHTML += "HAIR: ";
+    h_copy.innerHTML += h_hair.innerHTML + ". ";
+    h_copy.innerHTML += "EYES: ";
+    h_copy.innerHTML += h_eyes.innerHTML + ". ";
+    h_copy.innerHTML += h_height.innerHTML + ". ";
+    h_copy.innerHTML += "CLOTHES: ";
+    h_copy.innerHTML += h_clothes.innerHTML + ". ";
+    h_copy.innerHTML += "EXTRA: ";
+    h_copy.innerHTML += h_bonus.innerHTML + ". ";
+    h_copy.innerHTML += h_bonus1.innerHTML + ". ";
+    h_copy.innerHTML += h_bonus2.innerHTML + ". ";
+};
+
+
+// copy the prompt to the clipboard
+// https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard#using_the_clipboard_api
+function copy_prompt() {
+    let copyElem = document.getElementById("copy");
+    let copyText = copyElem.innerHTML;
+
+    // check for permissions
+    navigator.permissions.query({ name: "clipboard-write" }).then((result) => {
+        if (result.state === "granted" || result.state === "prompt") {
+            // write to the clipboard
+            navigator.clipboard.writeText(copyText).then(
+                () => {
+                    console.log("Copied to clipboard")
+                },
+                () => {
+                    console.log("Copying to clipboard failed")
+                },
+              );
+        }
+      });
 };

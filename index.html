@@ -27,8 +27,13 @@
             <p>Use this to generate character concepts, art prompts, and more!</p>
             <button onclick="change_HTML()">Generate</button>
             <p>Photo by <a href="https://unsplash.com/@kazuend?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">kazuend</a> on <a href="https://unsplash.com/photos/calm-body-of-water-near-alp-mountains-during-nighttime-2KXEb_8G5vo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+            <button onclick="copy_prompt()">Copy Prompt</button>
         </div>
         <div id="prompt">
+            <!--Text to be copied, should be hidden.-->
+            <div id="copy"></div>
+
+            <!--The prompt categories-->
             <div class="promptitem">
                 <label>Colors</label>
                 <div class="color"></div>
