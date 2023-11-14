@@ -73,6 +73,10 @@ div#title a {
     color: #FFFF00;
 }
 
+div#copy {
+    display: none;
+}
+
 div#prompt {
     margin: auto;
     width: 50%;
